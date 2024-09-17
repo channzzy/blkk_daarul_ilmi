@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+:root{
+    --primaryColor : #3c486b;
+    --secondaryColor : #e8aa42;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    background-color: var(--primaryColor)
+}
+.nav-item .nav-link {
+    color: white;
+}
+.nav-item .nav-link:hover {
+    background-color: var(--secondaryColor);
+    border-radius: 4px;
+}
+.navbar-brand img{
+    width: 70px;
+    height: 70px;
+}
+.hero {
+    height: 60vh;
+    width: 100%;
+    background-color: var(--primaryColor);
+    color: white;
+}
+.hero .container-fluid{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 0 !important;
+}
+
+.hero-img{
+    background: url('./images/hero.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    height: 60vh !important;
+}
+
+.stats{
+    background-color: #f7f7f7;
+}
+.stats .container{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.stat-item{
+    color: var(--primaryColor);
+}
+
+.title-about-us{
+    background-color: var(--primaryColor);
+    padding: 1rem 0.7rem;
+    border-radius: 10px;
+}
+
+.about-us {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+}
+.about-us{
+    padding: 2rem 5rem;
+}
+.about-us .content{
+    display: flex;
+    align-items: start;
+    gap: 3rem;
+}
+.about-us .content .image img{
+    width: 100%;
+    border-radius: 100%;
+}
+
+#organization{
+    background-color: var(--primaryColor);
+}
+
+#organization .container-fluid{
+    padding: 2rem 5rem;
+}
+
+#organization .container-fluid h4{
+    color: white;
+}
+#organization .container-fluid h4{
+    color: white;
+}
+#organization .container-fluid p{
+    color: white;
+}
+
+#list-training .container-fluid{
+    padding: 2rem 5rem;
+}
+
+#footer{
+    background-color: var(--primaryColor);
+    color: white;
+}
+#footer .container-fluid{
+    padding: 2rem 5rem;
+}
+#footer a {
+    text-decoration: none;
+    color: white;
+    margin-right: 2rem;    
+    font-size: 1.5em;
+    transition: color 0.3s ease;
+}
+
+@media (max-width: 1400px) and (min-width: 1025px){
+    #footer iframe{
+        width: 650px;
+        height: 400px;
+    }
+}
+@media (max-width: 1024px) and (min-width: 993px) {
+    .hero-img{
+        background: none;
+    }
+    .hero-img img{
+        display: block !important;
+        width: 400px;
+        border-radius: 10px;
+        margin-right: 10px;
+    }
+    .hero h2, #footer h2{
+        font-size: 20px;
+    }
+    .hero .hero-text p, #footer p{
+        font-size: 13px;
+    }
+    .about-us .content{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: start;
+        gap: 3rem;
+    }
+    .about-us .content .image img{
+        width: 50%;
+        display: flex;
+        margin: 0 auto;
+    }
+    #list-training .card {
+        margin-top: 1rem;
+    }
+    #footer iframe{
+        width: 450px;
+        height: 350px;
+    }
+}
+@media (max-width: 768px)  and (min-width: 425px){
+    .hero .container-fluid{
+        flex-direction: column-reverse;
+        gap: 0 !important;
+    }
+    .hero{
+        height: 100%;
+    }
+    .hero-img{
+        display: none;
+    }
+    .hero-text{
+        padding: 1rem 0;
+        text-align: center;
+        margin-right: 0 !important;
+    }
+    .hero-img img{
+        display: none;
+    }
+    .hero h2, #footer h2{
+        font-size: 20px;
+    }
+    .hero .hero-text p, #footer p{
+        font-size: 13px;
+    }
+    .stats .container{
+        flex-direction: column;
+    }
+    .stats h4{
+        font-size: 16px;
+    }
+    .stats p{
+        font-size: 12px;
+    }
+    .about-us,#organization .container-fluid,#list-training .container-fluid, #footer .container-fluid{
+        padding: 1rem 3rem;
+    }
+    .about-us .content{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: start;
+        gap: 3rem;
+    }
+    .about-us .content .image img{
+        width: 50%;
+        display: flex;
+        margin: 0 auto;
+    }
+    #organization #desc-person{
+        margin-top: 1rem;
+    }
+    #list-training .card {
+        margin-top: 1rem;
+    }
+    #footer iframe{
+        width: 300px;
+        height: 250px;
+    }
+}
